@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.book.online.onlinebookstore.entity.Book;
 
-@CrossOrigin("*")
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long>{
   

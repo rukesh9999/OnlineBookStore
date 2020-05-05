@@ -19,6 +19,7 @@ public class RepositoryConfig  implements RepositoryRestConfigurer{
 		// TODO Auto-generated method stub
         config.exposeIdsFor(entityManager.getMetamodel().getEntities().stream()
         		.map(Type::getJavaType).toArray(Class[]::new));
+        config.getCorsRegistry().addMapping("/**").allowedOrigins("*");
 	}
 
 	
